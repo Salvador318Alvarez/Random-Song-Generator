@@ -5,7 +5,7 @@ const Home = () => {
             ["Jesus I My Cross Have Taken", 
             "Glory to His Name", 
             "Jesus Paid It All", 
-            "The Way of the Cross",
+            "The Way of the Cross Leads Home",
             "When I Survey",
             "Beneath the Cross",
             "I Gave My Life for Thee",
