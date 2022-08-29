@@ -49,3 +49,19 @@ button {
   margin: 20px auto;
   cursor: pointer;
 }
+/* song previews / list */
+.song-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.song-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.song-preview h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.song-preview a{
+  text-decoration: none;
+}

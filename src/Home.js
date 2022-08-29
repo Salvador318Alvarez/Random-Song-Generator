@@ -1,32 +1,19 @@
 import { useState } from 'react';
 
 const Home = () => {
-    const songs = 
-            ["Jesus I My Cross Have Taken", 
-            "Glory to His Name", 
-            "Jesus Paid It All", 
-            "The Way of the Cross",
-            "When I Survey",
-            "Beneath the Cross",
-            "I Gave My Life for Thee",
-            "At Calvary",
-            "Isn't the Love of Jesus",
-            "Peace, Peace"];
-    // let song = "Jesus I My Cross";
-      
-    const [song, setSong] = useState('Random Songs Outputted Here');
-
-    const handleClick = () => {
-        setSong(songs[Math.floor(Math.random()*10)]);
-        console.log(song);
-    }
-
+  const [songList, setSongList] = useState([
+    {title:"Jesus, I My Cross Have Taken", id: 1},
+    {title:"Glory to His Name", id: 2},
+    {title:"Jesus Paid It All", id: 3}
+  ]);
 
     return (
-        <div className="home">
-            <h2>Homepage</h2>
-            <button onClick={handleClick}>Click Me</button>
-            <p>{song}</p>
+        <div>
+            {songList.map((song) => (
+                <div className="song-preview" key={song.id}>
+                    <h2>{song.title}</h2>
+                </div>
+            ))}
         </div>
     );
 }
