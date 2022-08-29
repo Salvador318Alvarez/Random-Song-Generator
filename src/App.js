@@ -4,12 +4,10 @@ import Home from "./Home";
 function App() {
   return (
     <div>
-      <body>
         <Navbar />
         <div className="content">
           <Home/>
         </div>
-      </body>
     </div>
   );
 }
