@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import List from './List';
 
 const Home = () => {
@@ -21,10 +21,15 @@ const Home = () => {
         setSongs(newSongs);
     }
 
+    const reloadPage = () => {
+        window.location.reload();
+    }
+
     return (
         <div className="home">
             <h2>Homepage</h2>
             <List songs={songs} handleDelete={handleDelete}/>
+            <button onClick={reloadPage}>Refresh Page</button>
         </div>
     );
 }
