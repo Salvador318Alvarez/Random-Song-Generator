@@ -44,10 +44,15 @@ button {
   background: rgb(50, 54, 161);
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
   margin: 20px auto;
   cursor: pointer;
+  font-weight: 600;
+}
+
+.right {
+  text-align: right;
 }
 /* song previews / list */
 .song-preview {
