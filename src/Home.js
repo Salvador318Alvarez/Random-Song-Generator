@@ -4,6 +4,7 @@ import List from './List';
 const Home = () => {
 
     const [songs, setSongs] = useState(null);
+    const [isPending, setIsPending] = useState(true);
 
     const handleDelete = (id) => {
         const newSongs = songs.filter(song => song.id !== id);
@@ -17,6 +18,7 @@ const Home = () => {
         })
         .then((data) =>{
             setSongs(data);
+            setIsPending(false);
         });
         console.log("useEffect ran");
     }, []);
@@ -27,7 +29,10 @@ const Home = () => {
 
     return (
         <div className="home">
+             {isPending && <div>Loading...</div>}
+           
             <h2>Homepage</h2>
+           
             {songs && <List songs={songs} handleDelete={handleDelete}/>}
             <button onClick={reloadPage}>Refresh Page</button>
         </div>

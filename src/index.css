@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+::root {
+}
 
 * {
   margin: 0;
@@ -61,7 +63,7 @@ button {
   border-bottom: 1px solid #fafafa;
 }
 .song-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 4px 3px 4px rgba(0,0,0,0.1);
 }
 .song-preview h2 {
   font-size: 20px;
