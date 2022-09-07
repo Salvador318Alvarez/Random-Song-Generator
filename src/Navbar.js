@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return ( 
         <nav className="navbar">
             <h1>Song Randomizer</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/songs">Songs</a>
-                <a href="/add">Add</a>
+                <Link to="/">Home</Link>
+                <Link to="/songs">Songs</Link>
+                <Link to="/add">Add</Link>
             </div>
         </nav>
      );
