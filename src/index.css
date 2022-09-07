@@ -75,16 +75,19 @@ button {
 
 
 /* blog details page */
-.blog-details h2 {
+.song-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: rgb(45, 47, 118);
   margin-bottom: 10px;
+  text-align: center;
 }
-.blog-details div {
-  margin: 20px 0;
+.song-details div {
+  margin: 40px 0;
+  border-top: solid grey 2px;
+  padding-top: 5%;
 }
-.blog-details button {
-  background: #f1356d;
+.song-details button {
+  background: rgb(50, 54, 161);
   color: #fff;
   border: 0;
   padding: 8px;
@@ -92,22 +95,27 @@ button {
   cursor: pointer;
 }
 
+.song-details p {
+  font-size: 13px;
+  text-align: center;
+}
+
 /* create new blog form */
-.create {
+.add {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
-.create label {
+.add label {
   text-align: left;
   display: block;
 }
-.create h2 {
+.add h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: rgb(50, 54, 161);
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.add input, .add textarea, .add select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -116,7 +124,7 @@ button {
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: rgb(50, 54, 161);
   color: #fff;
   border: 0;
   padding: 8px;

@@ -3,48 +3,58 @@
         {
             "title" :"Jesus, I My Cross Have Taken", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "Jesus, I My Cross Have Taken, All to Leave..",
             "id": 1
         },
 
         {
             "title":"Glory to His Name", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics":"Down at the Cross where my Saviour, ",
             "id": 2
         },
         {
             "title":"Jesus Paid It All", 
-            "songBook":"Soul-Stirring Song & Hymns",  
+            "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "I hear my Savior say..", 
             "id": 3
         },
         {   "title":"The Way of the Cross", 
-            "songBook":"Soul-Stirring Song & Hymns", 
+            "songBook":"Soul-Stirring Song & Hymns",
+            "lyrics": "I must needs go home..." ,
             "id": 4
         },
         {
             "title": "When I Survey", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "When I Survey the wondrous cross",
             "id":5
         },
         {
             "title": "Beneath the Cross of Jesus", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "Beneath the Cross of Jesus I fain would take...",
             "id":6
         },
         {
             "title": "I Gave My Life for Thee", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "I gave my life for thee...",
             "id": 7
         },
-        {   "title": "I am Coming", 
+        {   "title": "I am Coming to the Cross", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "I am coming to the cross, I am poor...",
             "id":8
         },
         {   "title": "Room at the Cross", 
             "songBook":"Soul-Stirring Song & Hymns", 
+            "lyrics": "The cross upon which Jesus died...",
             "id":9
         },
         {   "title": "Near the Cross", 
-            "songBook":"Soul-Stirring Song & Hymns", 
+            "songBook":"Soul-Stirring Song & Hymns",
+            "lyrics": "Jesus, keep me near the cross", 
             "id":10
         }
     ]
