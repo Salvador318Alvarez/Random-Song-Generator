@@ -14,10 +14,10 @@ const Songs = () => {
         <div className="home">
              {isPending && <div>Loading...</div>}
            
-            <h2>Songs</h2>
+            {!isPending && <h2>Songs</h2>}
             {error && <div>{error}</div>}
             {songs && <List songs={songs}/>}
-            <button onClick={reloadPage}>Refresh Page</button>
+            {!isPending && <button onClick={reloadPage}>Refresh Page</button>}
         </div>
     );
 }

@@ -131,3 +131,8 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.white {
+  background-color: rgb(225, 225, 225);
+  text-decoration: none;
+}

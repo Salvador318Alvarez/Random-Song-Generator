@@ -7,7 +7,7 @@ const List = ({songs, handleDelete}) => {
             {songs.map((song) => (
                 <div className="song-preview" key={song.id}>
                     <Link to={`/song/${song.id}`}> 
-                        <h2> #{song.id} - {song.title}</h2>
+                        <h2> #{song.number} - {song.title}</h2>
                         <p> Source: {song.songBook}</p>
                     </Link>
                    

@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home">
              {isPending && <div>Loading...</div>}
            
-            <h2>Homepage</h2>
+            {!isPending && <h2>Homepage</h2>}
             
             {error && <div>{error}</div>}
         </div>
