@@ -14,7 +14,24 @@ const Home = () => {
         <div className="home">
              {isPending && <div>Loading...</div>}
            
-            {!isPending && <h2>Homepage</h2>}
+            {!isPending && 
+            <div className='randomizer'>
+                <h2>Randomizer</h2>
+                <p>
+                   First song
+                </p>
+                <p>
+                    Second Song
+                </p>
+                <p>
+                    Third Song
+                </p>
+                <p>
+                    Fourth Song
+                </p>
+                <button>Get Four Random Hymns</button>
+            </div>
+            }
             
             {error && <div>{error}</div>}
         </div>

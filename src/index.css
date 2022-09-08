@@ -136,3 +136,29 @@ button {
   background-color: rgb(225, 225, 225);
   text-decoration: none;
 }
+
+// Randomizer Home Page
+
+.randomizer {
+  background-color: ghostwhite;
+  border-radius: 30px;
+}
+
+.randomizer h2 {
+  text-align: center;
+  padding: 8px;
+  border-bottom: #ddd solid 2px;
+}
+
+.randomizer p {
+  text-align: center;
+  margin: 10px 0;
+  padding: 8px 0;
+  border-radius: 15px;
+}
+
+.randomizer button{
+  display:block;
+  text-align: center;
+  background-color: #313333;
+}
