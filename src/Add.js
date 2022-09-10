@@ -31,10 +31,10 @@ const Add = () => {
             <h2> Add New Songs </h2>
             <form onSubmit={handleSubmit}>
                 
-                <label>Song Number:</label>
+                <label>Song Number():</label>
                 <input 
+                placeholder="(if applicable)"
                 type="number" 
-                required
                 value = {number} 
                 min="1"
                 max="500"
@@ -63,7 +63,7 @@ const Add = () => {
                 value = {source} 
                 onChange = {(e) => setSource(e.target.value)}
                 >
-                    <option value="Soul Stirring Songs & Hymns">Soul Stirring Songs & Hymns</option>
+                    <option default value="Soul Stirring Songs & Hymns">Soul Stirring Songs & Hymns</option>
                     <option value="Other">Other</option>
                 </select>
 
