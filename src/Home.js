@@ -1,13 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import List from './List';
 import useFetch from './useFetch';
 
 const Home = () => {
     const { data: songs, isPending, error } = useFetch('http://localhost:8000/songs');
+    const [firstSong, setFirstSong] = useState("First Song");
+    const [secondSong, setSecondSong] = useState("Second Song");
+    const [thirdSong, setThirdSong] = useState("Third Song");
+    const [fourthSong, setFourthSong] = useState("Fourth Song");
 
-
-    const reloadPage = () => {
-        window.location.reload();
+    const randomizer = () => {
+        const firstSongNum = Math.floor(Math.random()*songs.length);
+        setFirstSong("#" + songs[firstSongNum].number + " " + songs[firstSongNum].title);
+        console.log(firstSong);
+        
     }
 
     return (
@@ -18,18 +24,18 @@ const Home = () => {
             <div className='randomizer'>
                 <h2>Randomizer</h2>
                 <p>
-                   First song
+                   {firstSong}
                 </p>
                 <p>
-                    Second Song
+                    {secondSong}
                 </p>
                 <p>
-                    Third Song
+                    {thirdSong}
                 </p>
                 <p>
-                    Fourth Song
+                    {fourthSong}
                 </p>
-                <button>Get Four Random Hymns</button>
+                <button onClick={randomizer}>Get Four Random Hymns</button>
             </div>
             }
             
