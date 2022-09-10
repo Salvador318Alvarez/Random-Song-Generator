@@ -5,13 +5,13 @@ const Add = () => {
    const [title, setTitle] = useState('');
    const [lyrics, setLyrics] = useState('');
    const [number, setNumber] = useState(null);
-   const [source, setSource] = useState('Soul Stirring Songs & Hymns');
+   const [songBook, setSongBook] = useState('Soul Stirring Songs & Hymns');
    const [isPending, setIsPending] = useState(false);
    const navigate = useNavigate();
 
    const handleSubmit = (e) => {
     e.preventDefault();
-    const song = {title, lyrics, source, number };
+    const song = {title, lyrics, songBook, number };
     
     setIsPending(true);
 
@@ -31,7 +31,7 @@ const Add = () => {
             <h2> Add New Songs </h2>
             <form onSubmit={handleSubmit}>
                 
-                <label>Song Number():</label>
+                <label>Song Number:</label>
                 <input 
                 placeholder="(if applicable)"
                 type="number" 
@@ -49,21 +49,19 @@ const Add = () => {
                 onChange = {(e) => setTitle(e.target.value)}
                 />
 
-
                 <label>Song Lyrics:</label>
                 <textarea 
                 required
                 value = {lyrics} 
                 onChange = {(e) => setLyrics(e.target.value)}>
-
                 </textarea>
 
                 <label>Song Source:</label>
                 <select
-                value = {source} 
-                onChange = {(e) => setSource(e.target.value)}
+                value = {songBook} 
+                onChange = {(e) => setSongBook(e.target.value)}
                 >
-                    <option default value="Soul Stirring Songs & Hymns">Soul Stirring Songs & Hymns</option>
+                    <option value="Soul Stirring Songs & Hymns">Soul Stirring Songs & Hymns</option>
                     <option value="Other">Other</option>
                 </select>
 
