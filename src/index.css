@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 
 * {
   margin: 0;
@@ -21,120 +19,11 @@
   color: rgb(50, 54, 161);
 }
 
-.navbar .links {
-  font-weight: 700;
-  margin-left: auto;
-}
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-.navbar a:hover {
-  color: rgb(50, 54, 161);
-}
-
 .content {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
 }
-
-button {
-  background: rgb(50, 54, 161);
-  color: #fff;
-  border: 0;
-  padding: 4px;
-  border-radius: 8px;
-  margin: 20px auto;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.right {
-  text-align: right;
-}
-/* song previews / list */
-.song-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
-}
-.song-preview:hover {
-  box-shadow: 3px 4px 3px 4px rgba(0,0,0,0.1);
-}
-.song-preview h2 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-.song-preview a{
-  text-decoration: none;
-}
-
-
-/* blog details page */
-.song-details h2 {
-  font-size: 20px;
-  color: rgb(45, 47, 118);
-  margin-bottom: 10px;
-  text-align: center;
-}
-.song-details div {
-  margin: 40px 0;
-  border-top: solid grey 2px;
-  padding-top: 5%;
-}
-.song-details button {
-  background: rgb(50, 54, 161);
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.song-details p {
-  font-size: 13px;
-  text-align: center;
-}
-
-/* create new blog form */
-.add {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.add label {
-  text-align: left;
-  display: block;
-}
-.add h2 {
-  font-size: 20px;
-  color: rgb(50, 54, 161);
-  margin-bottom: 30px;
-}
-.add input, .add textarea, .add select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-.create button {
-  background: rgb(50, 54, 161);
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.white {
-  background-color: rgb(225, 225, 225);
-  text-decoration: none;
-}
-
 
 .randomizer {
   background-color: ghostwhite;
@@ -156,6 +45,11 @@ button {
 
 .randomizer button{
   display:block;
-  text-align: center;
+  padding: 4px;
+  margin: 20px auto;
   background-color: #313333;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
 }
