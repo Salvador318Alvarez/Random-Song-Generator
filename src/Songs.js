@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import List from './List';
 import useFetch from './useFetch';
 
